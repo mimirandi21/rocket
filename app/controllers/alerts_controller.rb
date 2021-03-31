@@ -28,7 +28,7 @@ class AlertsController < ApplicationController
 
         # format data before rendering
         def render_alerts
-            render json: AlertSerializer.new(alerts).to_serialized_json
+            render json: AlertsSerializer.new(alerts).to_serialized_json
         end
 
 end

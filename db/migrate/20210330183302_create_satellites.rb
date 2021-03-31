@@ -11,8 +11,8 @@ class CreateSatellites < ActiveRecord::Migration[6.1]
       t.text :contactState
       t.text :contactStep
       t.text :contactDetail
-      t.integer :contactBeginTimestamp
-      t.integer :contactEndTimestamp
+      t.bigint :contactBeginTimestamp
+      t.bigint :contactEndTimestamp
       t.decimal :contactLatitude
       t.decimal :contactLongitude
       t.decimal :contactAzimuth
